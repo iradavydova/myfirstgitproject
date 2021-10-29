@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        div.flexcontainer {
+            height: 500px;
+            width: 900px;
+        }
+
+        header {
+            background-color: rgb(214, 214, 218);
+            display: flex;
+            height: 70px;
+            width: 900px;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section {
+            background-color: rgb(250, 229, 209);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 400px;
+            width: 500px;
+            font-weight: bold;
+        }
+
+        aside {
+            background-color: rgb(214, 247, 218);
+            display: flex;
+            height: 400px;
+            width: 400px;
+            font-weight: bold;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        footer {
+            background-color: rgb(214, 214, 218);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 150px;
+            width: 900px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .body-container {
+            display: flex;
+
+        }
+
+        .more {
+            background-color: rgb(252, 180, 97);
+            height: 50px;
+            width: 190px;
+        }
+
+        .two-blocks {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-self: flex-end;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .title {
+            display: flex;
+            justify-self: flex-start;
+
+
+        }
+
+        .more3 {
+            background-color: rgb(252, 180, 97);
+            height: 50px;
+            width: 400px;
+        }
+
+        .footer {
+            background-color: rgb(242, 242, 247);
+            display: flex;
+            height: 70px;
+            width: 180px;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <header>[Шапка страницы]</header>
+        <div class="body-container">
+            <section>
+                <div class="title">[Основная часть]</div>
+                <div class="content">
+                    <div class="two-blocks">
+                        <p class="more">[Еще 1]</p>
+                        <p class="more">[Еще 2]</p>
+                    </div>
+                    <div>
+                        <p class="more3">[Еще 3]</p>
+                    </div>
+                </div>
+            </section>
+            <aside>[Боковая область]</aside>
+        </div>
+        <footer>
+            <p class="footer">[Секция футера 1]</p>
+            <p class="footer">[Секция футера 2]</p>
+            <p class="footer">[Секция футера 3]</p>
+            <p class="footer">[Секция футера 4]</p>
+        </footer>
+    </div>
+</body>
